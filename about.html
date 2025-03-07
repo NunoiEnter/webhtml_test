@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>เกี่ยวกับสาขาวิชา</title>
+  <style>
+    /* Additional styles for majors section */
+    .majors-section {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    
+    .majors-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .major-item {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 350px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+    }
+    
+    .major-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .major-item a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .major-image {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-bottom: 3px solid rgb(160, 13, 44);
+    }
+    
+    .major-title {
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(160, 13, 44);
+    }
+    
+    .section-heading {
+      color: rgb(160, 13, 44);
+      text-align: center;
+      margin: 30px 0;
+      font-size: 28px;
+      position: relative;
+    }
+    
+    .section-heading::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: rgb(160, 13, 44);
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="hgroup-wrap" class="container">
+    <div id="header-left">
+      <h1 id="site-logo"><a href="https://pre.eng.rmutp.ac.th/" title="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร" rel="home">
+        <img src="https://pre.eng.rmutp.ac.th/wp-content/uploads/2020/03/cropped-rmutp-logo.png" width="554" height="141" alt="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร">
+      </a></h1>
+      <div id="hgroup" class="with-logo">
+        <h1 id="site-title"><a href="https://pre.eng.rmutp.ac.th/" title="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร" rel="home">เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร</a></h1>
+        <br>
+        <h2 id="site-description">เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร</h2>
+      </div>
+    </div>
+  </div>
+  
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">สาขาที่เปิดสอน</a>
+    <a href="program.html">ข้อมูลเกี่ยวกับวิทยาลัย</a>
+    <a href="activity.html">ภาพกิจกรรมของวิทยาลัย</a>
+    <a href="info.html">ข้อมูลคณะผู้บริหารของวิทยาลัย</a>
+    <a href="contact.html">ข้อมูลติดต่อวิทยาลัย</a>
+  </nav>
+  
+  <div class="majors-section">
+    <h2 class="section-heading">สาขาวิชาที่เปิดสอน</h2>
+    <ul class="majors-list">
+      <li class="major-item">
+        <a href="tc.html">
+          <img src="https://as1.ftcdn.net/v2/jpg/04/54/49/88/1000_F_454498819_VTHYFq40dB3ur4fVGK2UdK5WeAXpch0r.jpg" alt="ปวช.ช่างเทคนิคคอมพิวเตอร์" class="major-image" width="400px"; height="400px">
+          <div class="major-title">ปวช.ช่างเทคนิคคอมพิวเตอร์</div>
+        </a>
+      </li>
+      <li class="major-item">
+        <a href="ep.html">
+          <img src="https://www.eng45group.com/images/content/original-1518424075623.jpg" alt="ปวช.ช่างไฟฟ้ากำลัง" class="major-image">
+          <div class="major-title">ปวช.ช่างไฟฟ้ากำลัง</div>
+        </a>
+      </li>
+      <li class="major-item">
+        <a href="ee.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiBFT-2uK8ORO0j4KNxW2HynEzIDfwoq1K5RRNBPojjUA9OYQGLT4P3_DC94bsgxobF4&usqp=CAU" alt="ปวช.ช่างอิเล็กทรอนิกส์" class="major-image">
+          <div class="major-title">ปวช.ช่างอิเล็กทรอนิกส์</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <footer>
+    <p>© 2024 สาขาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Electric</title>
+    <style>
+        /* Additional styles for the TC page */
+        .program-header {
+            position: relative;
+            background-image: url('https://static.thairath.co.th/media/4DQpjUtzLUwmJZZSDrwhs2XmPvwJuVLbK3ft3BbmdpXA.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .program-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(160, 13, 44, 0.7);
+        }
+
+        .program-title {
+            position: relative;
+            color: white;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 80%;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .content-section {
+            flex: 1 1 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: rgb(160, 13, 44);
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgb(160, 13, 44);
+        }
+
+        .content-list {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .content-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .content-list li::before {
+            content: "•";
+            color: rgb(160, 13, 44);
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background-color: rgba(160, 13, 44, 0.1);
+            border-left: 4px solid rgb(160, 13, 44);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .pdf-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgb(160, 13, 44);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .pdf-link:hover {
+            background-color: rgb(130, 10, 35);
+        }
+
+        .pdf-icon {
+            margin-right: 8px;
+        }
+
+        .nested-list {
+            list-style-type: none;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        .nested-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .nested-list li::before {
+            content: "–";
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .program-header {
+                height: 200px;
+            }
+
+            .program-title {
+                font-size: 24px;
+            }
+
+            .content-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hgroup-wrap" class="container">	    
+        <div id="header-left">
+            <h1 id="site-logo"><a href="https://pre.eng.rmutp.ac.th/" title="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร" rel="home">
+                <img src="https://pre.eng.rmutp.ac.th/wp-content/uploads/2020/03/cropped-rmutp-logo.png" width="554" height="141" alt="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร">
+            </a></h1>
+            <div id="hgroup" class="with-logo">
+                <h1 id="site-title"><a href="https://pre.eng.rmutp.ac.th/" title="เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร" rel="home">เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร</a></h1>
+                <br>
+                <h2 id="site-description">เตรียมวิศวรรมศาสตร์ คณะวิศวกรรมศาสตร์ มทร.พระนคร</h2>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">หน้าแรก</a> 
+        <a href="about.html">สาขาที่เปิดสอน</a>
+        <a href="program.html">ข้อมูลเกี่ยวกับวิทยาลัย</a>
+        <a href="activity.html">ภาพกิจกรรมของวิทยาลัย</a>
+        <a href="info.html">ข้อมูลคณะผู้บริหารของวิทยาลัย</a>
+        <a href="contact.html">ข้อมูลติดต่อวิทยาลัย</a>
+    </nav>
+
+    <div class="program-header">
+        <h1 class="program-title">ปวช.ช่างไฟฟ้ากำลัง</h1>
+    </div>
+    <div class="content-container">
+        <div class="content-section">
+            <h2 class="section-title">รายละเอียดหลักสูตร</h2>
+            <div class="highlight-box">
+                <a href="    https://pre.eng.rmutp.ac.th/docs/vocational62/voc_electronic62.pdf
+" class="pdf-link">
+                    <span class="pdf-icon">📑</span> ประกาศนียบัตรวิชาชีพ สาขาวิชาช่างไฟฟ้ากำลัง
+                </a>
+            </div>
+
+            <h2 class="section-title">คุณสมบัติผู้เข้าศึกษา</h2>
+                <ul>
+                    <li>👨‍🎓👩‍🎓 สำเร็จการศึกษาระดับมัธยมศึกษาตอนต้น (ม.3) หรือเทียบเท่า</li>
+                </ul>
+
+                <h2 class="section-title">รับสมัครผ่านทางเว็บไซต์มหาวิทยาลัย</h2>
+                <ul class="content-list">
+                    <li>ทางเว็ปไซต์ที่ <a href="http://www.rmutp.ac.th">http://www.rmutp.ac.th</a> หรือ <a href="http://reg.rmutp.ac.th/registrar/apphome.asp">http://reg.rmutp.ac.th/registrar/apphome.asp</a></li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-title">หลักฐานที่ใช้ในการสมัคร</h2>
+                    <ul class="content-list">
+                        <li>สำเนาบัตรประจำตัวประชาชน จำนวน 1 ฉบับ</li>
+                        <li>สำเนาทะเบียนบ้าน จำนวน 1 ฉบับ</li>
+                        <li>รูปถ่ายขนาด 1 นิ้ว จำนวน 4 รูป</li>
+                        <li>สำเนาใบระเบียนผลการศึกษา จำนวน 1 ฉบับ (เกรดเฉลี่ยสะสม 4 ภาคการศึกษาขึ้นไป)</li>
+                        <li>ใบรับรองการเป็นนักศึกษา จำนวน 1 ฉบับ</li>
+                    </ul>
+
+            <div class="content-section">
+                <h2 class="section-title">การสอบคัดเลือก (รอบรับโควตา)</h2>
+                <ol>
+                    <li>สอบข้อเขียน (ทดสอบเบื้องต้น)</li>
+                    <li>สอบสัมภาษณ์</li>
+                    <li>เกรดเฉลี่ยสะสม (GPAX) ในเอกสาร ปพ.1</li>
+                </ol>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">การสอบคัดเลือก (รอบรับตรง)</h2>
+                <ol>
+                    <li>สอบข้อเขียน วิชาภาษาไทย, สังคมศึกษา, ภาษาอังกฤษ, คณิตศาสตร์ และวิทยาศาสตร์</li>
+                    <li>สอบสัมภาษณ์</li>
+                </ol>
+            </div>
+        </div>
+</body>
+
+</html>
